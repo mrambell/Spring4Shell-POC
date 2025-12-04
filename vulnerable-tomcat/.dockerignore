@@ -1,1 +1,3 @@
-spring-war/
+spring-war/target/
+spring-war/.gradle/
+spring-war/build/
