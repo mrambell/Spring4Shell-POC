@@ -1,7 +1,7 @@
-FROM tomcat:9.0.60-jre11-openjdk-slim-buster
+FROM tomcat:10.1-jre17-temurin-jammy
 
-ADD spring-form.war /usr/local/tomcat/webapps/
+ADD spring-war/target/spring-form.war /usr/local/tomcat/webapps/
 
-EXPOSE 8888
+EXPOSE 8080
 
 CMD ["catalina.sh", "run"]
